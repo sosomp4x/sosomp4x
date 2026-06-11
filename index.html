@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sosomp4x portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;700&family=Silkscreen&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="img/icon_soso.jpg">
+    <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-follower" id="custom-cursor-follower"></div>
+
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-glitch-elements"></div>
+
+    <button id="backToTop" class="back-to-top" data-cursor="hover" title="Back to Top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/>
+        </svg>
+    </button>
+
+    <aside class="social-sidebar">
+        <div class="social-line"></div>
+        <a href="discord://-/users/1279956558570324028" class="social-icon" data-cursor="hover" title="Discord" target="_blank">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+        </a>
+        <a href="https://x.com/sosomp4x" class="social-icon" data-cursor="hover" title="Twitter/X" target="_blank">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+
+        <button class="social-icon" data-cursor="hover" title="Copy Email" id="copyEmailBtn" style="background:none;border:none;padding:0;">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </button>
+        <div id="emailToast" class="email-toast">Email copied!</div>
+        <div class="social-line"></div>
+    </aside>
+
+    <header class="main-header" id="header">
+        <div class="nav-logo" data-cursor="hover"></div>
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-item" data-cursor="hover">Home</a></li>
+                <li><a href="#about" class="nav-item" data-cursor="hover">About Me</a></li>
+                <li><a href="#portfolio" class="nav-item" data-cursor="hover">Portfolio</a></li>
+                <li><a href="#terms" class="nav-item" data-cursor="hover">Terms</a></li>
+                <li><a href="#contact" class="nav-item" data-cursor="hover">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section section-full isolate-layer glow-border-bottom">
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="video/wallpaper.mp4" type="video/mp4">
+            Me desculpe, mas o seu navegador não suporta a visualização deste vídeo de fundo.
+        </video>
+        <div class="video-overlay"></div>
+        
+        <div class="hero-content hero-centered">
+            <div class="hero-decorator reveal-elem delay-1"></div>
+            <h2 class="hero-subtitle reveal-elem delay-1">
+                <span>soso.mp4x</span>
+            </h2>
+            <h1 class="hero-title reveal-elem delay-2">
+                <span>Video Editor</span>
+            </h1>
+            <p class="hero-description reveal-elem delay-3">
+                I craft immersive videos that captivate audiences.
+            </p>
+            <div class="hero-cta reveal-elem delay-4">
+                <a href="#portfolio" class="pill-btn hero-main-btn" data-cursor="hover">
+                    <span class="pill-btn-text">VIEW PORTFOLIO</span>
+                    <span class="pill-btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container split-layout">
+            <div class="about-text-container reveal-elem">
+                <h2 class="section-title title-anim">
+                    <span>About Me</span><span class="text-red">.</span>
+                </h2>
+
+                <div class="about-paragraphs margin-top-md margin-bottom-lg">
+                    <p>
+                        I've been working with video editing for about a year. I started by editing short videos and lyrics, and I've been improving my skills in the editing field.<br><br>Nowadays I edit for any niche, but I have experience in the gaming niche, editing games like Minecraft, Roblox, GTA, Valorant, and others.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="dynamic-profile reveal-elem delay-2">
+                <div class="profile-icon">
+                    <img src="img/icon_soso.jpg" alt="Sofia Portrait">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section section-padding grunge-bg">
+        <div class="container">
+            <div class="center-text">
+                <h2 class="section-title title-anim reveal-elem">
+                    <span>Portfolio</span><span class="text-red">.</span>
+                </h2>
+            </div>
+
+            <div class="portfolio-group margin-top-md">
+                <h3 class="group-title reveal-elem">
+                    <span>Short Form </span><span class="text-red">Videos</span>
+                </h3>
+                <div class="carousel-wrapper reveal-elem">
+                    <button class="carousel-nav-btn prev-btn" aria-label="Previous Short" data-cursor="hover">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="shorts-carousel-container">
+                        <div class="shorts-carousel-track">
+                            <div class="carousel-slide" data-index="0">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/cookie1.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="1">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/cookie2.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="2">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/cookie3.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="3">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/cookie4.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="4">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/cookie5.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-btn next-btn" aria-label="Next Short" data-cursor="hover">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+
+                    <a href="https://www.youtube.com/@aCookieGod" target="_blank" class="short-client-card" data-cursor="hover">
+                        <div class="client-avatar">
+                            <img src="img/acookiegod.png" alt="ACookieGod">
+                        </div>
+                        <div class="client-details">
+                            <h4 class="client-name">ACookieGod</h4>
+                            <span class="client-subs"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>7.89 M subscribers</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MitchJones Section -->
+            <div class="portfolio-group margin-top-md">
+                <div class="carousel-wrapper reveal-elem">
+                    <button class="carousel-nav-btn prev-btn" aria-label="Previous Short" data-cursor="hover">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="shorts-carousel-container">
+                        <div class="shorts-carousel-track">
+                            <div class="carousel-slide" data-index="0">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/1.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="1">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/2.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="2">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/3.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="3">
+                                <div class="video-wrapper short-wrapper pro-thumbnail">
+                                    <video src="video/4.mp4" controls loop playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-btn next-btn" aria-label="Next Short" data-cursor="hover">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+
+                    <a href="https://www.twitch.tv/mitchjones" target="_blank" class="short-client-card" data-cursor="hover">
+                        <div class="client-avatar">
+                            <img src="img/mit.jpg" alt="MitchJones">
+                        </div>
+                        <div class="client-details">
+                            <h4 class="client-name">MitchJones</h4>
+                            <span class="client-subs"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>718K followers</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="terms" class="terms-section section-padding">
+        <div class="container container-narrow">
+            <div class="mission-briefing-box reveal-elem">
+                <div class="briefing-header center-text">
+                    <h2 class="briefing-title title-anim center-text">Terms Of Service</h2>
+                </div>
+                
+                <div class="briefing-content">
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; WHAT DO I DO:</h4>
+                        <p>
+                            I specialize in game editing and also do motion design. While I have my own editing style, I'm highly adaptable and committed to tailoring my work to your specific vision. From fast-paced gaming content to any other video style, I guarantee your project will be edited with precision and purpose.
+                        </p>
+                    </div>
+
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; DEADLINE:</h4>
+                        <p>
+                            The deadline is chosen by the customer, however, a minimum of 48 hours is required for editing.
+                        </p>
+                    </div>
+
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; EDITING PROGRAMS:</h4>
+                        <p>
+                            I use Adobe Premiere Pro and After Effects.
+                        </p>
+                    </div>
+
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; SEND FILES:</h4>
+                        <p>
+                            The client must send all videos, audios, and files via Google Drive. The completed video is delivered via Google Drive.
+                        </p>
+                    </div>
+
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; UNFORESEEN EVENTS:</h4>
+                        <p>
+                            If there are any unforeseen circumstances on my part that prevent the video from being delivered, the client will be notified in advance. Unexpected problems can come from either side, including the client themselves, for example: something wrong with the video, choppy or failing audio, delayed video, errors during recording, etc. Things like that are usually only noticed during the process, which can, rarely, delay the video editing progress.
+                        </p>
+                    </div>
+
+                    <div class="term-block">
+                        <h4 class="pixel-font text-red">&gt; PAYMENTS:</h4>
+                        <p>
+                            There are two ways to make the payment: Sending half of the agreed amount before the video is delivered and the other half afterward, or: Sending the total amount in advance - Payment in full after the video has been made and delivered is not accepted. Payment is made via PayPal or Inter Bank.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Glow Line added to this block -->
+    <section id="contact" class="footer-sections section-padding grunge-bg glow-border-top">
+        <div class="container footer-grid">
+            <div class="footer-content reveal-elem center-text">
+                <h3 class="footer-title title-anim"><span>Contact Me</span><span class="text-red">.</span></h3>
+                <p class="footer-text margin-bottom-lg">
+                    Ready to elevate your content? Drop me a message to discuss rates and availability.
+                </p>
+                <a href="discord://-/users/1279956558570324028" class="pill-btn margin-top-lg" data-cursor="hover">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    <span class="pill-btn-text">SEND ME A DM!</span>
+                    <span class="pill-btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="pixel-font">&copy; 2026 SOFIA. <span>ALL RIGHTS RESERVED.</span></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
